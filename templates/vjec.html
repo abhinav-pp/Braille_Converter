@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+	href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/style.css" />
+    <title>Input Image With Preview Image</title>
+</head>
+<body>
+    <div class="text-overlay">
+    <!-- New section for the text overlay -->
+    <h1>Braille to Text Converter</h1>
+    <!-- Text at the top middle of the background -->
+    </div>
+
+    <div class="container">
+    <form
+        method="POST"
+        action="{{ url_for('upload_file')}}"
+        enctype="multipart/form-data"
+    >
+        <div class="img-area" data-img="">
+        <i class="bx bxs-cloud-upload icon"></i>
+        <h3>Upload Image</h3>
+        <p>Image size must be less than <span>2MB</span></p>
+        </div>
+        <input class="select-image" type="file" name="file" /> <br />
+        <!-- <button class="select-image" type="submit">upload</button> -->
+        <div>
+        <label for="num_columns">Number of characters:</label>
+        <input
+            type="number"
+            id="num_columns"
+            name="num_columns"
+            min="1"
+            placeholder="Enter number of columns"
+            required
+        />
+        </div>
+        <br />
+        <button class="front text" type="submit">Convert</button>
+    </form>
+    </div>
+    <!-- New field for number of columns -->
+
+    <button>
+    <span class="shadow"></span>
+    <span class="edge"></span>
+    </button>
+
+    <div class="container">{% if result %} {{ result }} {% endif %}</div>
+    <script src="./static/script.js"></script>
+</body>
+</html>

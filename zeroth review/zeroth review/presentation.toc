@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{AREA OF SELECTION}{3}{0}{1}
+\beamer@sectionintoc {2}{INTELLIGENT MAP FOR BLIND STUDENTS}{4}{0}{2}
+\beamer@sectionintoc {3}{A COMPLETE FORECASTING TECHNOLOGY BASED ON VARIOUS PARAMETERS}{5}{0}{3}
+\beamer@sectionintoc {4}{ALIVE HUMAN DETECTION AND TRACKING SYSTEM}{6}{0}{4}
+\beamer@sectionintoc {5}{HUMAN SAFETY SYSTEM FOR TWO WHEELERS}{7}{0}{5}

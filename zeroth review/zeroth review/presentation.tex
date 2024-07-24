@@ -1,0 +1,196 @@
+\documentclass[svgnames,9pt]{beamer}
+%\usepackage[latin1]{inputenc}
+\usetheme{Warsaw}
+\setbeamertemplate{headline}{}
+\setbeamerfont{footline}{size=\fontsize{6}{8}\selectfont}
+\makeatletter
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+	\insertshorttitle\hfill%
+	\insertframenumber\,/\,\inserttotalframenumber}
+\setbeamertemplate{frametitle}
+{%
+	
+	\nointerlineskip%
+	\vskip-2pt%
+	\hbox{\leavevmode
+		\advance\beamer@leftmargin by -12bp%
+		\advance\beamer@rightmargin by -12bp%
+		\beamer@tempdim=\textwidth%
+		\advance\beamer@tempdim by \beamer@leftmargin%
+		\advance\beamer@tempdim by \beamer@rightmargin%
+		\hskip-\Gm@lmargin\hbox{%
+			\setbox\beamer@tempbox=\hbox{\begin{minipage}[b]{\paperwidth}%
+					\vbox{}\vskip.50ex% NEW: original \vskip-.75ex
+					\leftskip0.3cm%
+					\rightskip0.3cm plus1fil\leavevmode
+					\insertframetitle%
+					\ifx\insertframesubtitle\@empty%
+					\strut\par%
+					\else
+					\par{\usebeamerfont*{framesubtitle}{\usebeamercolor[fg]{framesubtitle}\insertframesubtitle}\strut\par\vskip2ex}% NEW: added \vskip2ex
+					\fi%
+					\nointerlineskip
+					\vbox{}%
+			\end{minipage}}%
+			\beamer@tempdim=\ht\beamer@tempbox%
+			\advance\beamer@tempdim by 2pt%
+			\begin{pgfpicture}{0pt}{0pt}{\paperwidth}{\beamer@tempdim}
+				\usebeamercolor{frametitle right}
+				\pgfpathrectangle{\pgfpointorigin}{\pgfpoint{\paperwidth}{\beamer@tempdim}}
+				\pgfusepath{clip}
+				\pgftext[left,base]{\pgfuseshading{beamer@frametitleshade}}
+			\end{pgfpicture}
+			\hskip-\paperwidth%
+			\box\beamer@tempbox%
+		}%
+		\hskip-\Gm@rmargin%
+	}%
+	\nointerlineskip
+	\vskip-0.2pt
+	\hbox to\textwidth{\hskip-\Gm@lmargin\pgfuseshading{beamer@topshade}\hskip-\Gm@rmargin}
+	\vskip-2pt
+}
+\makeatother
+\addtobeamertemplate{frametitle}{\vspace*{0.5cm}}{\vspace*{0.5cm}}
+
+\title[CSD334]{\huge \textbf{CSD334 - MINI PROJECT}} %Project title
+\author[Group1]{}
+
+\date{}
+
+\begin{document}
+	\begin{frame}
+		
+		\begin{figure}[h!]
+			\includegraphics[scale=0.25]{img/vjec}
+		\end{figure}
+		
+		\begin{center}      
+			\begin{minipage}[b]{1.0\textwidth}
+				\centering
+				Department of Computer Science and Engineering\\
+				Vimal Jyothi Engineering College\\ Chemperi
+			\end{minipage}%
+		\end{center}
+		
+		\titlepage
+		
+		\begin{minipage}[t]{0.5\textwidth}
+			\vspace{-2cm}
+			\begin{flushleft}
+				{ \textit{MEMBERS}:\vspace*{0.1cm} \\STUDENT 1 (VML19CS005)\\STUDENT 2 (VML19CS005)\\STUDENT 3 (VML19CS005)\\STUDENT 4 (VML19CS005) } %students name
+			\end{flushleft}
+		\end{minipage}%
+		%
+		\begin{minipage}[t]{0.5\textwidth}
+			\vspace{-2cm}
+			\begin{flushright}
+				{\textit{GUIDE}:\vspace*{0.1cm} \\ Mr.Guide} %supervisor name
+			\end{flushright}    
+		\end{minipage}%
+	\end{frame}
+\begin{frame}{OUTLINE}
+	\tableofcontents
+\end{frame}
+\section{AREA OF SELECTION}
+\begin{frame}{AREA OF SELECTION:Artificial Intelligence}
+	\begin{block}{Artificial Intelligence}
+		Artificial intelligence(AI) refers to the
+		simulation of human intelligence in
+		machines that are programmed to
+		think like humans and mimic their
+		actions.
+	\end{block}
+	\underline{\textbf{TOPICS}}
+	\begin{enumerate}
+		\item An Intelligent Map For Blinds
+		\item A Complete Forecasting Technology Based On Various Parameters
+		\item Alive Human Detection and Tracking System
+		\item Human Safety System for Two Wheelers
+	\end{enumerate}
+\end{frame}
+\section{INTELLIGENT MAP FOR BLIND STUDENTS}
+\begin{frame}{INTELLIGENT MAP FOR BLIND STUDENTS}
+	\underline{\textbf{AIM}}
+	\begin{itemize}
+		\item Design an intelligent map that help blinds to locate, study and analyze maps.
+	\end{itemize}
+	\underline{\textbf{OBJECTIVE}}
+		\begin{itemize}
+		\item The idea is to design a device that helps the blind students and people to
+		understand different properties on the Map which covers all Earth.
+			\item The device consist of tablet with track pads and hand gesture controls. Also
+		the device is supported with a stylus pen and intelligent voice assist.
+			\item When user selects certain properties in stylus and touch it to the tablet, the
+		voice assist conveys the details to the user
+	\end{itemize}
+	\underline{\textbf{SCOPE}}
+	\begin{itemize}
+		\item It can be used for studying Geography for blind students.
+		\item It can be used as a navigation system for blind
+	\end{itemize}
+\end{frame}
+\section{A COMPLETE FORECASTING TECHNOLOGY BASED ON VARIOUS PARAMETERS}
+\begin{frame}{A COMPLETE FORECASTING TECHNOLOGY BASED ON VARIOUS PARAMETERS}
+	\underline{\textbf{AIM}}
+	\begin{itemize}
+		\item Design an intelligent map that help blinds to locate, study and analyze maps.
+	\end{itemize}
+	\underline{\textbf{OBJECTIVE}}
+	\begin{itemize}
+		\item The idea is to design a device that helps the blind students and people to
+		understand different properties on the Map which covers all Earth.
+		\item The device consist of tablet with track pads and hand gesture controls. Also
+		the device is supported with a stylus pen and intelligent voice assist.
+		\item When user selects certain properties in stylus and touch it to the tablet, the
+		voice assist conveys the details to the user
+	\end{itemize}
+	\underline{\textbf{SCOPE}}
+	\begin{itemize}
+		\item It can be used for studying Geography for blind students.
+		\item It can be used as a navigation system for blind
+	\end{itemize}
+\end{frame}
+\section{ALIVE HUMAN DETECTION AND TRACKING SYSTEM}
+\begin{frame}{ALIVE HUMAN DETECTION AND TRACKING SYSTEM}
+	\underline{\textbf{AIM}}
+	\begin{itemize}
+		\item Design an intelligent map that help blinds to locate, study and analyze maps.
+	\end{itemize}
+	\underline{\textbf{OBJECTIVE}}
+	\begin{itemize}
+		\item The idea is to design a device that helps the blind students and people to
+		understand different properties on the Map which covers all Earth.
+		\item The device consist of tablet with track pads and hand gesture controls. Also
+		the device is supported with a stylus pen and intelligent voice assist.
+		\item When user selects certain properties in stylus and touch it to the tablet, the
+		voice assist conveys the details to the user
+	\end{itemize}
+	\underline{\textbf{SCOPE}}
+	\begin{itemize}
+		\item It can be used for studying Geography for blind students.
+		\item It can be used as a navigation system for blind
+	\end{itemize}
+\end{frame}
+\section{HUMAN SAFETY SYSTEM FOR TWO WHEELERS}
+\begin{frame}{HUMAN SAFETY SYSTEM FOR TWO WHEELERS}
+	\underline{\textbf{AIM}}
+	\begin{itemize}
+		\item Design an intelligent map that help blinds to locate, study and analyze maps.
+	\end{itemize}
+	\underline{\textbf{OBJECTIVE}}
+	\begin{itemize}
+		\item The idea is to design a device that helps the blind students and people to
+		understand different properties on the Map which covers all Earth.
+		\item The device consist of tablet with track pads and hand gesture controls. Also
+		the device is supported with a stylus pen and intelligent voice assist.
+		\item When user selects certain properties in stylus and touch it to the tablet, the
+		voice assist conveys the details to the user
+	\end{itemize}
+	\underline{\textbf{SCOPE}}
+	\begin{itemize}
+		\item It can be used for studying Geography for blind students.
+		\item It can be used as a navigation system for blind
+	\end{itemize}
+\end{frame}
+\end{document}
